@@ -1,0 +1,16 @@
+<svg width="1200" height="240" viewBox="0 0 1200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="240" fill="white"/>
+
+  <polygon points="70,165 134,133 134,165" fill="black"/>
+
+  <polygon points="152,165 200,165 200,100 152,124" fill="black"/>
+
+  <text x="240" y="165"
+        font-family="Helvetica, Arial, sans-serif"
+        font-size="78"
+        font-weight="600"
+        letter-spacing="12"
+        fill="black">
+    LIFT FORWARD
+  </text>
+</svg>
