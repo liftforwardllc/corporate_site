@@ -223,7 +223,11 @@ body.is-fixed { overflow: hidden; }
 }
 
 .mv__photo {
-  background: url(/img/mv_pc_01.jpg) center / cover no-repeat;
+  background: url(/img/mv_pc_01.jpg) center / cover no-repeat; /* fallback */
+  background: image-set(
+    url(/img/mv_pc_01.webp) type("image/webp"),
+    url(/img/mv_pc_01.jpg)  type("image/jpeg")
+  ) center / cover no-repeat;
 }
 
 .mv__text {
@@ -244,7 +248,11 @@ body.is-fixed { overflow: hidden; }
     max-height: 440px;
   }
   .mv__photo {
-    background-image: url(/img/mv_sp_01.jpg);
+    background-image: url(/img/mv_sp_01.jpg); /* fallback */
+    background-image: image-set(
+      url(/img/mv_sp_01.webp) type("image/webp"),
+      url(/img/mv_sp_01.jpg)  type("image/jpeg")
+    );
     position: absolute; inset: 0;
     height  : 100%;
   }
