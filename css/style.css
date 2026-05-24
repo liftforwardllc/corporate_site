@@ -88,13 +88,14 @@ body.is-fixed { overflow: hidden; }
 */
 
 .heading--1 {
-  font-family   : 'Barlow', sans-serif;
+  font-family   : 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size     : clamp(2.75rem, 5.5vw, 4.25rem);
   font-weight   : 600;
   line-height   : 1.05;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.10em;
   color         : var(--black);
 }
+.heading--1__forward { letter-spacing: 0.09em; }
 
 .heading--2 {
   font-family   : 'Barlow', sans-serif;
@@ -253,6 +254,7 @@ body.is-fixed { overflow: hidden; }
       url(/img/mv_sp_01.webp) type("image/webp"),
       url(/img/mv_sp_01.jpg)  type("image/jpeg")
     );
+    background-position: 65% center;
     position: absolute; inset: 0;
     height  : 100%;
   }
